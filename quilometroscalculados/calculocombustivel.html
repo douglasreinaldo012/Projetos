@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>consumo de combustível</title>
+    <style>
+        
+         @font-face {
+            font-family:'Captureit';
+            src:url('fonts/Captureit.ttf') format('TrueType');
+            font-weight: normal;
+        }
+        :root{
+            --corfont:#BFAD34;
+            --corfont2:#9E0962;
+            --fonte-padrao:Arial,Verdana,Helvetica,sans-serif;
+            --fonte-destaque:'Captureit', cursive;
+            --fontetitulo:'Baloo Bhaina 2', cursive;
+        }
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        body{
+            padding: 5px;
+            background-image: linear-gradient(to bottom, rgba(25, 146, 155, 0.61),rgba(126, 238, 223, 0.562)) ;
+        }
+        main {
+            color:beige;
+            font: normal 10pt Arial;
+            background-image: linear-gradient(to bottom, rgb(25, 146, 155),rgb(126, 238, 223)) ;
+            min-width: 280px;
+            max-width: 400px;
+            min-height: 600px;
+            max-height: 800px;
+            
+            box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.527);
+            margin: auto;
+            text-align: left;
+            border-radius:10px;
+            padding-top: 15px;
+            padding-left: 30px;
+            
+
+        }
+        main h1{
+            font: normal 30pt var(--fonte-destaque);
+            color:var(--corfont);
+            text-align: center;
+            padding: 10px 10px 0px 10px;
+            text-shadow: 1px 0px 0px black;
+        }
+        main p{
+            font: normal 20px Arial;
+            text-align: center;
+            color: var(--corfont2);
+            padding: 5px;
+
+        }
+        main input{
+           text-align: center;
+           font: normal 13pt Arial;
+           display: block;
+           margin: auto;
+           background-color:beige;
+           box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.418);
+           border: none;
+           padding: 0px;
+           border-radius: 3px;
+           width: 100px;
+           height: 18px;
+        }
+        main section{
+            padding: 30px;
+            margin-bottom: 5px;
+
+        }
+        div#gasto{
+            font: normal 20px Arial;
+            text-align: center;
+            color: #fce02d;
+            padding: 1px;
+            text-shadow: 0px 0px 3px black;
+            width: 200px;
+            height: 30px;
+            border-radius: 5px;
+            display: block;
+            margin: auto;
+        }
+        main input#botao{
+            font: normal 20px Arial;
+            text-align: center;
+            color: var(--corfont2);
+            padding: 5px;
+            background: #16ac08;
+            width: 100px;
+            height: 30px;
+            border-radius: 5px;
+            display: block;
+            margin: auto;
+        }
+    </style>
+</head>
+<body onload="hora()">
+    <main>
+        <div id="sau">
+
+        </div>
+        <h1>Calcule a sua jornada</h1>
+
+        <section>
+            <p>valor unitário do combustível:</p><input type="number"name="txtunitario" id="txtunitario"><br>
+            <p>Quantos km´s seu carro percorre com 1lt?</p><input type="number" name="txtmeucarrofaz" id="txtmeucarrofaz"><br>
+            <p>Quantos Km pretende percorrer?</p><input type="number" name="txtateonde" id="txtateonde"><br>
+            <input type="button" value="Verificar" onclick="calcular()" id="botao"><br>
+            <div id="gasto">
+                você gastará..
+            </div>
+        </section>
+        <script>
+            function calcular(){
+            var txtuni = window.document.querySelector('input#txtunitario')
+            var txtcarro = window.document.querySelector('input#txtmeucarrofaz')
+            var txtateonde = window.document.querySelector('input#txtateonde')
+            var meugasto = window.document.querySelector('div#gasto')
+            var unitario = Number(txtuni.value)
+            var carrofaz = Number(txtcarro.value)
+            var ateonde = Number(txtateonde.value)
+            var divisao = unitario/carrofaz
+            var res_meu_gasto = divisao*ateonde
+        
+            meugasto.innerHTML =`você gastará R$${res_meu_gasto.toFixed(2)}`
+            }
+            function hora(){
+            var horas= new Date()
+                hr= horas.getHours()
+                var s2=window.document.querySelector('div#sau')
+                var s='nada'
+                if(hr>=6 && hr<12){
+                    s='Bom dia!'
+                }else if(hr>=12 && hr<18){
+                    s='Boa tarde!'
+                }else if(hr>=18 && hr<=23){
+                    s='Boa noite!'
+                }else{
+                    s='Boa Madrugada!'
+                }
+               s2.innerHTML= (`<h2>Olá,${s}</h2>`)
+            }
+            </script>
+
+ </main>
+</body>
+</html>
