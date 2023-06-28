@@ -1,13 +1,32 @@
+@font-face {
+    font-family: 'PoppinsRegular';
+    src: url('../fonts/Poppins-Regular.otf');
+}
+@font-face {
+    font-family: 'PoppinsMedium';
+    src: url('../fonts/Poppins-Medium.otf');
+}
 :root {
     --cor-background:#faf0b4;
     --cor-primary:#64117d;
     --cor-secundary:#ffb717;
     --cor-verde:#288707;
-    --cor-text:#212121;
+    --cor-black:#212121;
+    --cor-text:#4f4f4f;
     --cor-text-out:#90908e;
     --cor-separate:#cccccc;
 }
 html, body {
     background-color: var(--cor-background);
+    font-family: 'PoppinsRegular','Rubik',sans-serif;
+    color: var(--cor-text);
 
+}
+b {
+    font-family: 'PoppinsMedium','Rubik',sans-serif;
+}
+.nav-link {
+color: var(--cor-black);
+padding-left: 35px!important;
+padding-right: 35px!important;
 }
