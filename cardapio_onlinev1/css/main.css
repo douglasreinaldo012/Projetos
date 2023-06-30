@@ -25,13 +25,16 @@ html, body {
 b {
     font-family: 'PoppinsMedium','Rubik',sans-serif;
 }
+a.navbar-brand {
+    margin-left: -10px;
+}
 .nav-link {
 color: var(--cor-black)!important;
 padding-left: 35px!important;
 padding-right: 35px!important;
 }
 .btn-white {
-    background-color:var(--cor-secundary);
+    background-color:white;
     color: var(--cor-black)!important;
     border-radius: 20px;
     padding: 15px 25px;
@@ -44,8 +47,8 @@ padding-right: 35px!important;
 }
 .btn-icon .icon {
     display: inline-block;
-    color: var(--cor-black);
-    background-color:white;
+    color: white;
+    background-color:var(--cor-secundary);
     width: 45px;
     height: 45px;
     position: absolute;
@@ -55,4 +58,78 @@ padding-right: 35px!important;
     text-align: center;
     padding-top: 6px;
 
+}
+.color-primary {
+    color: var(--cor-primary);
+}
+.banner {
+    padding-top: 90px;
+    padding-bottom: 200px;
+}
+.text-banner {
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 60px;
+}
+.text-banner h1 {
+    color: var(--cor-black);
+    font-size: 42px;
+}
+.text-banner p {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    font-size: 20px;
+}
+.btn-puple {
+    background-color:var(--cor-primary);
+    color: white !important;
+    border-radius: 20px;
+    padding: 15px 25px;
+    font-size: 20px;
+    box-shadow: 0px 10px 15px -3px rgb(0,0,0,0.1);
+}
+.btn-icon-left {
+    padding-left: 70px;
+}
+.btn-icon-left span.icon-left {
+    display: inline-block;
+    color: white;
+    background-color: var(--cor-primary);
+    width: 45px;
+    height: 45px;
+    position: absolute;
+    margin-left: -60px;
+    margin-top: -8px;
+    border-radius: 15px;
+    text-align: center;
+    padding-top: 8px;
+}
+.btn-sm {
+    padding: 9px 15px !important;
+    border-radius: 15px !important;
+    font-size: 18px !important;
+}
+.icon-sm-whatsapp {
+    color:#288707;
+}
+.icon-sm-face {
+    color: blue;
+}
+.icon-sm-insta {
+    color:rgb(212, 62, 222);
+}
+.card-banner {
+    height: 400px;
+    width: 400px;
+    border-radius: 150px;
+    background-color: #791597be;
+    position: absolute;
+    right: 0px;
+    top: -60px;
+}
+.img-banner img {
+    position: absolute;
+    width: 500px;
+    top: 30px;
+    right: 15px;
 }
