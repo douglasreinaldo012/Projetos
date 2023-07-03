@@ -42,6 +42,9 @@ padding-right: 35px!important;
     box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.1);
     position: relative;
 }
+.btn-white.active,.btn-white:hover {
+background-color: var(--cor-secundary);
+}
 .btn-icon {
     padding-right: 75px;
 }
@@ -132,4 +135,31 @@ padding-right: 35px!important;
     width: 600px;
     top: -80px;
     right: 15px;
+}
+.card {
+    border-radius: 20px;
+    padding: 15px 20px;
+    font-size: 20px;
+    box-shadow:  0px 10px 15px -3px rgba(0,0,0,0.1)!important;
+    border: none!important;
+    
+}
+.card-case {
+    width: 400px;
+    font-size: 16px;
+    position: absolute;
+    right: 0;
+    bottom: 10px;
+    background-color: #4f4f4f;
+    opacity: 80%;
+    color: antiquewhite;
+}
+.card-case-name {
+    position: absolute;
+    font-size: 13px;
+    right: 20px;
+    bottom: 2px;
+    color: var(--cor-secundary);
+    padding-top: 30px;
+
 }
