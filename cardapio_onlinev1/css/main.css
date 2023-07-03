@@ -163,3 +163,7 @@ background-color: var(--cor-secundary);
     padding-top: 30px;
 
 }
+.servicos {
+   padding-top: 50px;
+   padding-bottom: 80px; 
+}
