@@ -166,4 +166,42 @@ background-color: var(--cor-secundary);
 .servicos {
    padding-top: 50px;
    padding-bottom: 80px; 
+
+}
+.hint-title{
+    color:var(--cor-primary);
+    font-size: 16px;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+}
+.title {
+    color:var(--cor-black);
+    font-size: 40px;
+    margin-top: 5px;
+    margin-bottom: 30px;
+}
+.card-icon {
+    height: 150px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card-text {
+    color:var(--cor-text);
+    font-size: 15px;
+    padding: 0px 30px;
+}
+.card-text p {
+    font-size: 22px;
+    color:var(--cor-black);
+    margin-bottom: 10px;
+}
+.background-servicos {
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 500px;
+    background-image: url(../img/bg-icons-2.png);
 }
