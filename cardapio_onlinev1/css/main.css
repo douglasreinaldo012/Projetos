@@ -115,6 +115,16 @@ background-color: var(--cor-secundary);
 .icon-sm-whatsapp {
     color:#288707;
 }
+.icone-acai{
+    display: inline-block;
+    font-size: inherit;
+    height: 1em;
+    overflow: visible;
+    vertical-align: -.125em;
+    width: 25px;
+   
+    
+}
 .icon-sm-face {
     color: blue;
 }
@@ -163,9 +173,9 @@ background-color: var(--cor-secundary);
     padding-top: 30px;
 
 }
-.servicos {
-   padding-top: 50px;
-   padding-bottom: 80px; 
+.servico {
+   padding-top: 80px;
+   padding-bottom: 120px; 
 
 }
 .hint-title{
@@ -204,4 +214,8 @@ background-color: var(--cor-secundary);
     right: 0;
     height: 500px;
     background-image: url(../img/bg-icons-2.png);
+}
+.cardapio {
+    padding-top: 80px;
+    padding-bottom: 120px;
 }
