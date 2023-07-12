@@ -232,3 +232,40 @@ background-color: var(--cor-secundary);
     padding-top: 30px;
     padding-bottom: 80px;
 }
+.container-menu{
+    margin-bottom: 60px;
+}
+.card-item{
+    height: 360px;
+    
+
+}
+.card-item .img-produto img{
+    width: 100%;
+    border-radius: 11px;
+
+}
+.card-item .title-produto {
+    color: var(--cor-black);
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    height: 40px;
+    margin-bottom: 0px;
+
+}
+.card-item .price-produto {
+    color: var(--cor-primary);
+    font-size: 24px;
+}
+.card-item .add-carrinho {
+    
+    text-align: center;
+    height: 30px;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+    border-radius: 10px;
+    width: 50%;
+    margin:auto;
+}
