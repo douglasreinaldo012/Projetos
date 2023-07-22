@@ -362,13 +362,13 @@ display: flex;
     margin-top: 70px;
 }
 .imagem-depoimento {
-    width: 65px;
+    width: 135px;
     height: 65px;
     background-color: white;
     border-radius: 50px;
     background-repeat:no-repeat;
     background-position: center;
-    margin-right: 15px;
+    margin-right: 10px;
 }
 #depoimento-1 .imagem-depoimento {
     background-image: url(../img/diego.jpg);
@@ -409,4 +409,49 @@ display: flex;
     justify-content: center;
     align-items: end;
 
+}
+.reserva {
+    padding-top: 100px;
+    padding-bottom: 150px;
+    margin-top: 70px;
+}
+.card-secondary {
+    background-color: rgba(235, 175, 241, 0.732);
+    border-radius: 70px;
+    padding: 90px;
+}
+.card-reserva {
+    height: 320px;
+    width: 320px;
+    border-radius: 120px;
+    background-color: rgba(157, 152, 152, 0.297);
+    position: absolute;
+    right: 0;
+    top: -25px;
+}
+.reserva .img-banner img {
+    width: 100%;
+    top: 25px;
+}
+footer {
+    background-color: #ffb717; 
+    height: 40px;
+    
+}
+.logo-footer {
+    width: 40px;
+}
+.container-logo-footer, .container-redes-footer, .container-texto-footer{
+    display: flex;
+    align-items: center;
+}
+.container-logo-footer {
+    justify-content: start;
+    top:-2.8px;
+}
+.container-texto-footer {
+    justify-content: center;
+}
+.container-redes-footer {
+    justify-content: end;
 }
