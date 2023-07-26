@@ -302,7 +302,8 @@ background-color: var(--cor-secundary);
     margin: 0;
 }
 .add-numero-itens {
-    color: var(--cor-black);
+    background-color:var(--cor-black);
+    color:white ;
     padding: 2px 15px;
     border-top: 2px solid var(--cor-black);
     border-bottom: 2px solid var(--cor-black);
@@ -314,8 +315,8 @@ background-color: var(--cor-secundary);
   font-size: 16px;
   padding: 4px 10px;
   border-radius: 10px;
-  color: var(--cor-background);
   background-color:var(--cor-black) ;
+  color: var(--cor-background);
   margin-left: 5px;
 }
 .card-item:hover{
@@ -330,7 +331,7 @@ background-color: var(--cor-secundary);
 .card-item:hover .price-produto {
     padding-top: 40px;
 }
-.card-item .icon-plus, .icon-menos,.add-numero-itens{
+.card-item .add-numero-itens{
    color: white;
 }
 .card-item:hover .btn-add{
@@ -454,4 +455,63 @@ footer {
 }
 .container-redes-footer {
     justify-content: end;
+}
+.modal-full {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 50px;
+    background: white;
+    z-index: 9990;
+    overflow-x: hidden;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+
+}
+.m-header {
+    padding: 20px;
+}
+.m-body {
+    flex: 1;
+    overflow: auto;
+    overflow-x:hidden ;
+}
+.etapas {
+    display: flex;
+}
+.etapa {
+    width: 35px;
+    height: 35px;
+    background-color: white;
+    border-radius: 50px;
+    box-shadow: 0px 10px 15px -3px rgb(0,0,0,0.1);
+    color: var(--cor-black);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+}
+.etapa::before {
+    content: '';
+    width: 20px;
+    background-color: rgba(83, 82, 82, 0.374);
+    position: absolute;
+    height: 2px;
+    margin-left: 55px;
+
+}
+.etapa:last-child::before{
+    content: none;
+}
+.etapa.active, .etapa.active::before {
+    background-color: var(--cor-primary);
+    color: white;
+    
+}
+.title-carrinho {
+    font-size: 20px;
+    color: var(--cor-black);
 }
