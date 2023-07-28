@@ -462,13 +462,14 @@ footer {
     bottom: 0;
     left: 0;
     right: 0;
-    padding: 50px;
-    background: white;
+    padding: 20px;
+    background:var(--cor-background);
     z-index: 9990;
     overflow-x: hidden;
     overflow-y: auto;
     display: flex;
     flex-direction: column;
+    
 
 }
 .m-header {
@@ -478,6 +479,7 @@ footer {
     flex: 1;
     overflow: auto;
     overflow-x:hidden ;
+    
 }
 .etapas {
     display: flex;
@@ -514,4 +516,74 @@ footer {
 .title-carrinho {
     font-size: 20px;
     color: var(--cor-black);
+    margin-bottom: 2px;
 }
+.modal-full .item-carrinho {
+    background-color:white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid var(--cor-separate);
+}
+.modal-full .item-carrinho:last-child {
+    border-bottom: none;
+}
+.modal-full .img-produto img {
+    width: 70px;
+    border-radius: 11px;
+}
+.modal-full .title-produto {
+    color: var(--cor-black);
+    font-size: 20px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    margin-bottom: 0;
+}
+.modal-full .price-produto {
+    color: var(--cor-secundary);
+    font-size: 24px;
+    margin-bottom: 0;
+}
+.modal-full .dados-produto {
+    flex: 1;
+    padding-left: 25px;
+    padding-right: 25px;
+
+}
+.modal-full .add-carrinho {
+    display: flex;
+    text-align: center;
+    height: 30px;
+    justify-content: center;
+    align-items: center;
+
+}
+.btn-remove {
+    border: 2px solid red;
+    font-size: 16px;
+    padding: 4px 10px;
+    border-radius: 10px;
+    color: white;
+    background-color: red;
+    margin-left: 15px;
+}
+.container-total {
+    padding-top: 20px;
+    border-top: 1px solid var(--cor-separate);
+}
+.texto-entrega {
+    color: var(--cor-separate);
+}
+.container-total .texto-total {
+    color: var(--cor-black);
+    font-size: 20px;
+    margin-top: 10px;
+}
+.container-total .valor-total {
+    color: var(--cor-primary);
+    font-size: 24px;
+}
+
