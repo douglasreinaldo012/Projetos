@@ -15,6 +15,7 @@
     --cor-text:#4f4f4f;
     --cor-text-out:#90908e;
     --cor-separate:#cccccc;
+    --cor-white:#ffffff;
 }
 html, body {
     background-color: var(--cor-background);
@@ -481,6 +482,16 @@ footer {
     overflow-x:hidden ;
     
 }
+.m-body::-webkit-scrollbar {
+    width: 6px;
+    background: transparent;
+}
+.m-body::-webkit-scrollbar-thumb{
+    background: white;
+}
+.m-body::-webkit-scrollbar-track{
+    background: transparent;
+}
 .etapas {
     display: flex;
 }
@@ -494,7 +505,7 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 20px;
+    margin: 10px;
 }
 .etapa::before {
     content: '';
@@ -519,7 +530,7 @@ footer {
     margin-bottom: 2px;
 }
 .modal-full .item-carrinho {
-    background-color:white;
+    background-color:#ffffff;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -586,4 +597,25 @@ footer {
     color: var(--cor-primary);
     font-size: 24px;
 }
+.form-control {
+    background-color: var(--cor-white);
+    color: var(--cor-black)!important;
+    border-radius: 20px;
+    padding: 15px;
+    font-size: 20px;
+    box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.1)!important;
+    border: none!important;
+}
+select.form-control {
+    height: 60px!important;
+}
+.container-cep .form-control {
+    padding-right: 75px;
+}
+.container-cep .btn {
+    position: absolute;
+    right: 25px;
+    top: 38px;
+}
+
 
