@@ -388,7 +388,7 @@
               <div class="etapas">
                 <div class="etapa etapa1 active">1</div>
                 <div class="etapa etapa2 active">2</div>
-                <div class="etapa etapa3 ">3</div>
+                <div class="etapa etapa3 active">3</div>
               </div>
               <p class="title-carrinho mt-3">
                 <b id="lblTituloEtapa">Seu Carrinho:</b>
@@ -414,7 +414,7 @@
                         </div>
                     </div>
                 </div>
-                <div id="localEntrega"class="row mr-0 ml-0 ">
+                <div id="localEntrega"class="row mr-0 ml-0 hidden ">
                     <div class="col-4">
                         <div class="form-group container-cep">
                             <label for="">CEP</label>
@@ -489,9 +489,32 @@
                         </div>
                     </div>
                 </div>
-                <div id="resumoCarrinho" class="row mr-0 ml-0
-                hidden">
-                    
+                <div id="resumoCarrinho" class="row mr-0 ml-0">
+                    <div class="col-12">
+                        <p class="title-carrinho mt-4">
+                            <b>Itens do pedido:</b>
+                        </p>
+                    </div>
+                    <div class="col-12">
+                        <div class="row" id="listaItensResumo">
+                            <div class="col-12 item-carrinho resumo">
+                                <div class="img-produto-resumo">
+                                    <img src="./img/cardapiollsupremos/acai/acai1e.jpeg"/>
+                                </div>
+                                <div class="dados-produto">
+                                    <p class="title-produto-resumo">
+                                        <b>Nome produto</b>
+                                    </p>
+                                    <p class="price-produto-resumo">
+                                        <b>R$0,00</b>
+                                    </p>
+                                </div>
+                                <p class="quantidade-produto-resumo">
+                                    x <b>3</b>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
