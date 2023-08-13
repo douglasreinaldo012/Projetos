@@ -169,6 +169,13 @@ var MENU = {
             "name": "Gramercy Tavern",
             "dsc": "Gramercy Tavern Burger + Kielbasa Combo",
             "price": 149
+        },
+        {
+            "id": "gramercy-tavern-burger-kielbasa-combo2",
+            "img": "./img/cardapio/burguers/Gramercy-Tavern-Burger-and-Kielbasa-Kit-6.4.21-72ppi-1x1-47.jpg",
+            "name": "Gramercy Tavern",
+            "dsc": "Gramercy Tavern Burger + Kielbasa Combo2",
+            "price": 148
         }
     ],
     "sobremesas": [
