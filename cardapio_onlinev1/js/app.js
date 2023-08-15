@@ -1,58 +1,40 @@
-$(document).ready(function () {
+$(document).ready(function(){
     cardapio.eventos.init();
 })
 var cardapio = {};
 cardapio.eventos = {
- init: () => {
-    cardapio.metodos.obterItensCardapio();
- }
+    init:() => {
+        cardapio.metodos.obterItensCardapio();
+    }
 }
 cardapio.metodos = {
-    //obtem a lista de itens do cardápio
-    obterItensCardapio: (categoria = 'burgers', vermais = false) => {
+    /*anotações 
+    -$.each funciona como um "for"
+    -a função "obterItensCardapio()"obtem a lista dos itens do cardapio
+    -replace é para substituir para item atual
+    -para adicionar algo no arquivo index usa-se $("#itensCardapio").append(temp)
+    -a função toFixed e para utilizar duas casa após a virgula
+    -a função .replace após o toFixed é para substituir o ponto pel virgula
+    -$("#itensCardapio").html('') e usado para limpar os intens quando for chamado outras listas*/
+    obterItensCardapio: (categoria = 'burgers') => {
         var filtro = MENU[categoria];
-        console.log(filtro);
-        if(!vermais){
-            $("#itensCardapio").html('');
-            $("#btnVerMais").removeClass('hidden');
-        }
+        $("#itensCardapio").html('')
         $.each(filtro, (i, e) => {
-            let temp = cardapio.templates.item.replace(/\${img}/g, e.img)
-            .replace(/\${nome}/g, e.name)
-            .replace(/\${preco}/g, e.price.toFixed(2).replace('.',','))
-            .replace(/\${id}/g, e.id)
-            //botão ver mais foi clicado (12 itens)
-            if(vermais && i >= 8 && i < 12){
-                $("#itensCardapio").append(temp)
-            }
-            //paginação inicial (8 itens)
-            if(!vermais && i < 8){
-                $("#itensCardapio").append(temp)
-            }
-        });
-        //remove o ativo
+            let temp = cardapio.templates.item.replace(/\${img}/g,e.img)
+            .replace(/\${preco}/g,e.price.toFixed(2).replace('.',','))
+            .replace(/\${nome}/g,e.name);
+        
+            $("#itensCardapio").append(temp)
+        })
+        //remove a class ativo
         $(".container-menu a").removeClass('active');
-        //seta o menu para ativo
-        $("#menu-" + categoria).addClass('active')
-    },
-    //clique no botão ver mais
-    verMais:() => {
-        var ativo = $(".container-menu a.active").attr('id').split('menu-')[1];
-        cardapio.metodos.obterItensCardapio(ativo,true)
-        $("#btnVerMais").addClass('hidden');
-    },
-    // diminuir a quantidade do item no cardapio
-    diminuirQuantidade:() => {
-
-    },
-    //aumentar a quantidade do item no cardapio
-    aumentarQuantidade:() => {
-
+        //adiciona ativo em outro menu
+        $("#menu-" + categoria).addClass('active');
     }
 }
 cardapio.templates = {
-    item:`
-    <div class="col-3 mb-3">
+item:`
+<div class="col-3 mb-3">
     <div class="card card-item" id="\${id}">
         <div class="img-produto">
             <img src="\${img}"/>
@@ -72,6 +54,4 @@ cardapio.templates = {
         </div>
     </div>
 </div>
-`
-
-}
+`}
