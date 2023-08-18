@@ -16,21 +16,35 @@ cardapio.metodos = {
     -a função toFixed e para utilizar duas casa após a virgula
     -a função .replace após o toFixed é para substituir o ponto pel virgula
     -$("#itensCardapio").html('') e usado para limpar os intens quando for chamado outras listas*/
-    obterItensCardapio: (categoria = 'burgers') => {
+    obterItensCardapio: (categoria = 'burgers',vermais = false) => {
+    
         var filtro = MENU[categoria];
+        if(!vermais){
         $("#itensCardapio").html('')
+        $("#btnVerMais").removeClass('hidden')
+        }
         $.each(filtro, (i, e) => {
             let temp = cardapio.templates.item.replace(/\${img}/g,e.img)
             .replace(/\${preco}/g,e.price.toFixed(2).replace('.',','))
             .replace(/\${nome}/g,e.name);
         
-            $("#itensCardapio").append(temp)
+            if(vermais && i >= 8 && i < 12){
+            $("#itensCardapio").append(temp);
+            }
+            if(!vermais && i < 8){
+            $("#itensCardapio").append(temp);
+            }
         })
         //remove a class ativo
         $(".container-menu a").removeClass('active');
         //adiciona ativo em outro menu
         $("#menu-" + categoria).addClass('active');
-    }
+    },
+    verMais(){
+        var ativo = $(".container-menu a.active").attr('id').split('menu-')[1];
+        cardapio.metodos.obterItensCardapio(ativo,true);
+        $("#btnVerMais").addClass('hidden')
+    },
 }
 cardapio.templates = {
 item:`
