@@ -1,6 +1,7 @@
 function adcCard(){
     var a1 = window.document.getElementById('itensCardapio');
     var no = window.prompt('Nome do devedor:');
+    var valor = window.prompt('valor do emprestimo:');
     a1.innerHTML =`
     <div class="col-3 mb-3">
         <div class="card card-item" id="\${id}">
@@ -9,10 +10,10 @@ function adcCard(){
             </div>
             <p class="title-produto text-center
             mt-1">
-                <b>\${no}</b>
+                <b>`+no+`</b>
             </p>
             <p class="price-produto text-center mt-1">
-                <b>R$ \${preco}</b>
+                <b>R$ `+valor+`</b>
             </p>
             <div class="add-carrinho">
                 <span class="btn-menos"><i class="fas fa-minus icon-menos"></i></span>
