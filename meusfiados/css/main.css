@@ -9,10 +9,10 @@
 :root {
     --color-background: #fffdf7;
     --color-black: #212121;
-    --color-text: #1e1d1d;
-    --color-text-out:#5a5a58;
-    --color-primary:#c6c5c5;
-    --color-primary-out:#e5e5e3;
+    --color-text: #252424;
+    --color-text-out:#70706b;
+    --color-primary: #a3a09f;
+    --color-primary-out:#bebab8;
     --color-secundary: #10ABB4;
     --color-white: #ffffff;
     --color-red: #e74c3c;
@@ -27,68 +27,102 @@ html, body {
     font-size: 16px;
     
 }
-b{
-    font-family:'PoppinsMedium', 'Rubik',sans-serif; ;
+header {
+    padding-top: 5px;
+    padding-left: 12px;
 }
-header h1{
-    margin-top: 15px;
-    margin-left: 15px;
+b{
+    font-family:'PoppinsMedium', 'Rubik',sans-serif; 
+    font-size: 12px;
+}
+i{
+    color: #d71818!important;
 }
 
-.width-fix {
+.lista-devedores {
     width: calc(100% - 20px);
-    max-width: 700px;
+    max-width: 800px;
     margin: 0px auto;
-    font-size: 14px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    
 }
 .card {
-    border-radius: 10px;
-    padding: 10px 10x;
+    border-radius: 7px;
+    padding: 0px 10px;
+    padding-left: 0px;
     font-size: 10px;
-    box-shadow:0px 10px 15px -3px rgba(0, 0, 0, 0.1)!important;
-    border: none !important;
     background-color: var(--color-primary);
-    max-height: 100px;
+    position: relative;
 }
-
 .container-img {
-    width : 40px;
-    height: 40px;
-    background-image: url(../img2/logo_tasmania.jpg);
+    width: 60px;
+    height: 60px;
+    background-image: url(../img2/rafa.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    margin-right: 15px;
-    margin-left: 5px;
-    border-radius: 10px; 
-    margin-top: 9px;
+    margin: 5px;
+    border-radius: 5px;
+    
+}
+.container-img2 {
+    width: 60px;
+    height: 60px;
+    background-image: url(../img2/douglas.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 5px;
+    border-radius: 5px;
+    
+}
+.container-img3{
+    width: 60px;
+    height: 60px;
+    background-image: url(../img2/kat.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 5px;
+    border-radius: 5px;
 }
 
-.infos {
+.infos { 
     flex:1;
     display: flex;
-    flex-direction:row;
-    justify-content:center;
-    font-size: 12px;
-    margin-top: 20px;
-    color: var(--color-black);
-    justify-content: space-between;
+    align-items: center;
 }
-.infos h2, p{ 
-    font-size: 12px;
-    margin-bottom: 14px;
-    color: var(--color-black);
-    margin-top: 5px;
+.nome-pessoa {
+    display: flex;
+    align-items: center;  
 }
-.btn-sm {
- background-color: var(--color-secundary);
- width: 80px;
- height: 30px;
- margin-right: 5px;
- color: var(--color-background);
- box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.2);
- font-size: 14px;
+.infos h1{
+    margin-left: 3px;
+    line-height: 60%;
+
+}
+.situacao-pessoa {
+ flex: 1;
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ line-height: 110%;
+ margin-right: 2px;
+  
+}
+.situacao-pessoa p {
+    margin-top: 13px;
+}
+.div-botao {
+    display: flex;
+    align-items: center;
+}
+.botao {
+   text-decoration: none;
+   background-color: var(--color-secundary);
+   padding: 5px 7px;
+   color: var(--color-white);
+   border-radius: 5px;
+   box-shadow: 0px 5px 10px -3px rgb(0,0,0,0.5);
+}
+.card2{
+    background-color: var(--color-primary-out);
 }
