@@ -55,34 +55,12 @@ i{
 .container-img {
     width: 60px;
     height: 60px;
-    background-image: url(../img2/rafa.jpg);
-    background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     margin: 5px;
     border-radius: 5px;
+    flex: none;
     
-}
-.container-img2 {
-    width: 60px;
-    height: 60px;
-    background-image: url(../img2/douglas.jpg);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    margin: 5px;
-    border-radius: 5px;
-    
-}
-.container-img3{
-    width: 60px;
-    height: 60px;
-    background-image: url(../img2/kat.jpg);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    margin: 5px;
-    border-radius: 5px;
 }
 
 .infos { 
