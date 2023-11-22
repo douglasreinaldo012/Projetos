@@ -166,3 +166,13 @@ section.categoria {
     color: var(--color-black);
     margin-bottom: 0px;
 }
+.infos-produto .description {
+    font-size: 14px;
+    color: var(--color-text);
+    margin-bottom: 5px;
+}
+.infos-produto .price {
+    font-size: 16px;
+    color: var(--color-primary-out);
+    margin-bottom: 5px;
+}
