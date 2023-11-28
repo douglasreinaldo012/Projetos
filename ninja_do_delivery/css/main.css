@@ -231,7 +231,7 @@ section.categoria {
     font-size: 16px;
     flex: 1;
     text-align: center;
-    padding: 12px 5px;
+    padding: 12px 0px;
 
 }
 
@@ -281,7 +281,7 @@ section.categoria {
 }
 
 .container-imagem-produto {
-    height: 240px;
+    height: 180px;
     width: 100%;
     background-position: center;
     background-repeat: no-repeat;
