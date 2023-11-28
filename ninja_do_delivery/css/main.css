@@ -22,6 +22,7 @@
     --color-separate: #cccccc;
     --color-input-out: #ececec;
 }
+
 html, body {
     font-family: 'PoppinsRegular', 'Rubik',sans-serif;
     background-color: var(--color-background);
@@ -29,9 +30,15 @@ html, body {
     font-size: 16px;
     
 }
+
 b{
     font-family:'PoppinsMedium', 'Rubik',sans-serif; ;
 }
+
+.hidden {
+    display: none!important;
+}
+
 .bg-topo {
     position: absolute;
     top: 0px;
@@ -49,6 +56,7 @@ b{
     font-size: 14px;
     
 }
+
 .card {
     border-radius: 20px;
     padding: 15px 20px;
@@ -74,16 +82,19 @@ b{
     flex-direction: column;
     justify-content: center;
 }
+
 .infos h1 { 
     font-size: 18px;
     margin-bottom: 5px;
     color: var(--color-black);
 }
+
 .infos-sub {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
+
 .status-open {
     font-size: 14px;
     margin-bottom: 0px;
@@ -93,14 +104,17 @@ b{
 .status-closed {
     color: var(--color-red);
 }
+
 .link {
     text-decoration: none!important;
     font-size: 16px;
     color: var(--color-primary)!important;
 }
+
 .icone-pastel{
     width: 24px;
 }
+
 section.categoria {
     position: sticky;
     top: 0;
@@ -110,6 +124,7 @@ section.categoria {
     width: 100%;
     padding-top: 15px;
 }
+
 .container-menu {
     margin-bottom: 30px;
     overflow-x: auto;
@@ -119,9 +134,11 @@ section.categoria {
     padding-top: 5px;
     padding-left: 10px;
 }
+
 .item-categoria {
     flex: none;
 }
+
 .btn-white {
     color: var(--color-black);
     background-color: var(--color-white);
@@ -130,24 +147,29 @@ section.categoria {
     font-size: 15px;
     box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
 }
+
 .btn-sm {
     padding: 8px 13px;
     border-radius: 15px;
     font-size: 16xp;
 }
+
 .btn-white:hover, .btn-white.active{
     background-color: var(--color-secundary);
     color: var(--color-white);
     
 }
+
 .title-categoria {
     color: var(--color-black);
     margin-left: 5px;
 }
+
 .container-group .card {
     padding: 15px;
     cursor: pointer;
 }
+
 .container-img-produto {
     width: 100px;
     height: 100px;
@@ -158,26 +180,31 @@ section.categoria {
     margin-right: 10px;
     flex: none;
 }
+
 .infos-produto {
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
+
 .infos-produto .nome-produto {
     font-size: 18px;
     color: var(--color-black);
     margin-bottom: 0px;
 }
+
 .infos-produto .description {
     font-size: 14px;
     color: var(--color-text);
     margin-bottom: 5px;
 }
+
 .infos-produto .price {
     font-size: 16px;
     color: var(--color-primary-out);
     margin-bottom: 5px;
 }
+
 .menu-bottom {
     position: fixed;
     right: 0;
@@ -197,15 +224,17 @@ section.categoria {
     align-items: center;
 
 }
+
 .menu-bottom-item {
     text-decoration: none!important;
     color: var(--color-text) !important;
-    font-size: 14px;
+    font-size: 16px;
     flex: 1;
     text-align: center;
     padding: 12px 5px;
 
 }
+
 .menu-bottom-item.active {
     color: var(--color-black)!important;
     font-weight: bold;
@@ -213,10 +242,11 @@ section.categoria {
     background-color: var(--color-secundary-out);
     border-radius: 50px;
 }
+
 .badge-total-carrinho {
     width: 21px;
     height: 21px;
-    background-color: var(--color-secundary-out);
+    background-color: var(--color-red);
     color: var(--color-black);
     font-weight: bold;
     border-radius: 50px;
@@ -225,4 +255,38 @@ section.categoria {
     position: relative;
     padding-top: 2px;
     margin-right: 2px;
+}
+
+.menu-bottom.disabled {
+    justify-content: center;
+    padding: 15px;
+    font-size: 18px;
+    color: var(--color-red);
+}
+
+/* Detalhes do produto*/
+.bg-topo.details {
+    height: 410px;
+}
+
+.container-voltar {
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none!important;
+    font-size: 18px!important;
+    color: var(--color-black)!important;
+}
+
+.container-imagem-produto {
+    height: 240px;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    border-radius: 20px;
+    margin: 0 auto;
+    margin-bottom: 10px;
 }
