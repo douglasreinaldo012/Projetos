@@ -360,6 +360,41 @@ section.categoria {
 }
 
 .container-check input:checked~.checkmark {
-    background-color: var(--color-secundary);
+    background-color: var(--color-primary-out);
 }
-/*20:08 stop*/
+
+.checkmark::after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+.container-check input:checked~.checkmark::after {
+   display: block; 
+}
+
+.container-check .checkmark::after {
+    left: 9px;
+    top: 7px;
+    width: 6px;
+    height: 10px;
+    border: solid var(--color-white);
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    border-width: 0px 3px 3px 0px;
+}
+
+.form-control {
+    background-color: var(--color-white);
+    color: var(--color-black)!important;
+    border-radius: 20px;
+    padding: 15px 25px;
+    font-size: 16px;
+    box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1)!important;
+    border: none!important;
+    height: 50px;
+}
+textarea {
+    height: 150px!important;
+}
