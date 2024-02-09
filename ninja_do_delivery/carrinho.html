@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto Ninja do Delivery</title>
+    <link rel="stylesheet" href="./css/animate.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/fontawesome.css">
+    <link rel="stylesheet" href="./css/main.css">
+
+</head>
+<body>
+    <div class="bg-topo pedido"></div>
+
+    <header class="width-fix mt-3">
+        <div class="card">
+            <div class="d-flex">
+                <a href="./index.html" class="container-voltar">
+                    <i class="fas fa-arrow-left"></i>
+                </a>
+                <div class="infos text-center">
+                    <h1 class="mb-0"><b>Seu carrinho</b></h1>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="carrinho width-fix mt-4">
+        <div class="card card-address">
+            <div class="img-icon-details">
+                <i class="fas fa-cart-plus"></i>
+            </div>
+            <div class="infos">
+                <p class="name"><b>Seu carrinho está vazio</b></p>
+                <span class="text mb-0">
+                    volte ao cardápio, selecione os itens e adicione ao seu carrinho.
+                </span>
+            </div>
+        </div>
+    </section>
+
+   <a class="btn btn-blue btn-full voltar" href="./index.html">
+    Voltar para cardápio
+   </a>
+
+    <section class="menu-bottom disabled hidden" id="menu-bottom-closed">
+        <p class="title-categoria mb-0"><b>Loja fechada no momento.</b></p>
+    </section>
+
+    <script type="text/javascript" src="./js/bootstrap.bundle.min.js"></script>
+    <script type="text/javascript" src="./js/item.js"></script>
+</body>
+</html>
