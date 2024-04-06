@@ -38,7 +38,9 @@ b{
 .hidden {
     display: none!important;
 }
-
+.pr-0 {
+    padding-right: 0px!important;
+}
 .bg-topo {
     position: absolute;
     top: 0px;
@@ -530,6 +532,14 @@ textarea {
     margin-left: 10px;
 }
 .carrinho .infos-produto .obs-opcional{
-    margin-right: 40px;
+    margin-right: 50px;
 }
 /*parou no 21:30*/
+
+.detalhes-produto-edit {
+    font-size: 14px;
+    padding-left: 10px;
+    padding-right: 10px;
+    color: var(--color-secundary-escuro);
+    cursor: pointer;
+}
