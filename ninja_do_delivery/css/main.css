@@ -532,7 +532,7 @@ textarea {
     margin-left: 10px;
 }
 .carrinho .infos-produto .obs-opcional{
-    margin-right: 50px;
+    margin-right: 40px;
 }
 /*parou no 21:30*/
 
@@ -542,4 +542,12 @@ textarea {
     padding-right: 10px;
     color: var(--color-secundary-escuro);
     cursor: pointer;
+}
+.carrinho .infos-produto .name-total {
+    font-size: 20px;
+    color: var(--color-black);
+}
+.carrinho .infos-produto .price-total {
+    font-size: 20px;
+    color: var(--color-red);
 }
