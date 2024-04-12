@@ -26,19 +26,20 @@
         </div>
     </header>
 
-    <section class="carrinho width-fix mt-4 hidden">
+    <section class="carrinho width-fix mt-4 ">
         <div class="card card-address">
             <div class="img-icon-details">
                 <i class="fas fa-cart-plus"></i>
             </div>
             <div class="infos">
-                <p class="name"><b>Seu carrinho está vazio</b></p>
+                <p class="name mb-0"><b>Seu carrinho está vazio</b></p>
                 <span class="text mb-0">
                     volte ao cardápio, selecione os itens e adicione ao seu carrinho.
                 </span>
             </div>
         </div>
     </section>
+
     <section class="carrinho width-fix mt-4">
 
         <div class="card mb-2 pr-0">
@@ -106,18 +107,130 @@
                     <p class="price-total mb-0"><b>R$ 24,00</b></p>
                 </div>
 
-                
             </div>
         </div>
 
     </section>
-   <a class="btn btn-blue btn-full voltar" href="./index.html">
-    Voltar para cardápio
-   </a>
-   <section class="opcionais width-fix mt-5 pb-5">
-        
 
-   </section>
+    <section class="opcionais width-fix mt-5 pb-5">
+        
+        <div class="container-group mb-5">
+            <span class="badge">Obrigatório</span>
+    
+            <p class="title-categoria mb-0"><b>Escolha uma opção</b></p>
+            <span class="sub-title-categoria">Como quer receber o pedido?</span>
+    
+            <div class="card card-opcionais mt-2">
+                <div class="infos-produto-opcional">
+                    <p class="name mb-0"><b>Entrega(60-90min)</b></p>
+                </div>
+                <div class="checks">
+                    <label class="container-check">
+                        <input type="checkbox">
+                        <span class="checkmark"></span>
+                    </label>
+                </div>
+            </div>
+    
+            <div class="card card-opcionais mt-2">
+                <div class="infos-produto-opcional">
+                    <p class="name mb-0"><b>Retirar no estabelecimento</b></p>
+                </div>
+                <div class="checks">
+                    <label class="container-check">
+                        <input type="checkbox">
+                        <span class="checkmark"></span>
+                    </label>
+                </div>
+            </div>
+    
+        </div>
+    
+        <div class="container-group mb-5">
+            <span class="badge">Obrigatório</span>
+    
+            <p class="title-categoria mb-0"><b>Qual seu endereço?</b></p>
+            <span class="sub-title-categoria">Informe o endereço da entrega:</span>
+            
+            <div class="card card-select mt-2">
+                <div class="infos-produto-opcional">
+                    <p class="mb-0 color-primary">
+                        <i class="fas fa-plus-circle">&nbsp;Nenhum endereço selecionado</i>
+                    </p>
+                </div>
+            </div>
+
+            <div class="card card-address mt-2">
+                <div class="img-icon-details" >
+                    <i class="fas fa-map-marked-alt"></i>
+                </div>
+                <div class="infos">
+                    <p class="name mb-0"><b>Rua sem nome,123, meu bairro</b></p>
+                    <span class="text mb-0">Novo Gama-GO/72865-000</span>
+                </div>
+                <div class="icon-edit">
+                    <i class="fas fa-pencil-alt"></i>
+                </div>
+            </div>
+            
+        </div>
+
+        <div class="container-group mb-5">
+            <span class="badge">Obrigatório</span>
+    
+            <p class="title-categoria mb-0"><b>Nome e sobre Sobrenome</b></p>
+            <span class="sub-title-categoria">Como vamos te chamar?</span>
+            
+            <input type="text" class="form-control mt-2 " placeholder="* Infome seu nome e sobrenome"/>
+        </div>
+
+        <div class="container-group mb-5">
+            <span class="badge">Obrigatório</span>
+    
+            <p class="title-categoria mb-0"><b>Número do seu celular</b></p>
+            <span class="sub-title-categoria">Para mais informações do pedido.</span>
+            
+            <input type="number" class="form-control mt-2 " placeholder="* (00) 0000-0000"/>
+        </div>
+    
+        <div class="container-group mb-5">
+            <span class="badge">Obrigatório</span>
+    
+            <p class="title-categoria mb-0"><b>Como você prefere pagar?</b></p>
+            <span class="sub-title-categoria">*pagamento na entrega</span>
+            
+            <div class="card card-select mt-2">
+                <div class="infos-produto-opcional">
+                    <p class="mb-0 color-primary">
+                        <i class="fas fa-plus-circle">&nbsp;Nenhuma forma de selecionada</i>
+                    </p>
+                </div>
+            </div>
+
+            <div class="card card-address mt-2">
+                <div class="img-icon-details" >
+                    <!--<i class="fas fa-coins"></i>-->
+                    <i class="fas fa-credit-card"></i>
+                </div>
+                <div class="infos">
+                    <!--<p class="name mb-0"><b>Dinheiro</b></p>-->
+                    <!--<span class="text mb-0">Troco para R$50,00</span>-->
+                    <p class="name mb-0"><b>Cartão Crédito</b></p>
+                    
+                </div>
+                <div class="icon-edit">
+                    <i class="fas fa-pencil-alt"></i>
+                </div>
+            </div>
+            
+        </div>
+    </section>
+
+
+
+   <a class="btn btn-blue btn-full" href="./index.html">
+    Fazer pedido <span>R$53,50</span>
+   </a>
 
     <section class="menu-bottom disabled hidden" id="menu-bottom-closed">
         <p class="title-categoria mb-0"><b>Loja fechada no momento.</b></p>
