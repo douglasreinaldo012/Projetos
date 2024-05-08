@@ -593,3 +593,22 @@ textarea {
     font-size: 16px;
    color: var(--color-secundary-escuro);
 }
+
+.icon-aviso {
+    font-size: 22px;
+    color: var(--color-black);
+}
+.container-aviso {
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.informe {
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 15px;
+    font-size: 18px;
+   
+}
