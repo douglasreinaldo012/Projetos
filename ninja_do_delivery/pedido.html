@@ -25,7 +25,7 @@
             </div>
         </div>
     </header>
-    <section class="pedido width-fix mt-4">
+    <section class="pedido width-fix mt-4 hidden">
         <div class="card card-status-pedido">
             <div class="icon-aviso img-icon-details">
                 <i class="fas fa-exclamation-triangle"></i>
@@ -38,6 +38,7 @@
     </section>
 
     <section class="pedido width-fix mt-4">
+
         <div class="card card-status-pedido mb-4">
             <div class="detalhes-produto">
                 <div class="infos-produto">
@@ -54,7 +55,56 @@
                 <p class="mb-0 mt-1">Ver pedido</p>
             </div>
         </div>
+        <div class="card card-status-pedido mb-2 cancelado">
+            <div class="img-icon-details">
+                <i class="fas fa-times"></i>
+            </div>
+            <div class="infos">
+                <p class="name mb-1"><b>Pedido cancelado!</b></p>
+                <span class="text mb-0">Entre em contato com a loja para mais informações.</span>
+            </div>
+        </div>
+
+        <div class="card card-status-pedido mb-2 active">
+            <div class="img-icon-details">
+                <i class="fas fa-clock"></i>
+            </div>
+            <div class="infos">
+                <p class="name mb-1"><b>Pedido enviado!</b></p>
+                <span class="text mb-0">Aguadando a onfirmação da loja</span>
+            </div>
+        </div>
+
+        <div class="card card-status-pedido mb-2 pendding">
+            <div class="img-icon-details">
+                <i class="fas fa-utensils"></i>
+            </div>
+            <div class="infos">
+                <p class="name mb-0"><b>Preparando..</b></p>
+            </div>
+        </div>
+
+        <div class="card card-status-pedido mb-2 pendding">
+            <div class="img-icon-details">
+                <i class="fas fa-motorcycle"></i>
+            </div>
+            <div class="infos">
+                <p class="name mb-0"><b>Seu pedido já saiu para entrega!</b></p>
+            </div>
+        </div>
+        <div class="card card-status-pedido mb-2 pendding">
+            <div class="img-icon-details">
+                <i class="fas fa-box"></i>
+            </div>
+            <div class="infos">
+                <p class="name mb-0"><b>Pronto para retirada.</b></p>
+            </div>
+        </div>
+       
+
     </section>
+
+
 
 
     <section class="menu-bottom" id="menu-bottom">

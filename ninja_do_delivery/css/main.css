@@ -259,7 +259,7 @@ section.categoria {
 .badge-total-carrinho {
     width: 21px;
     height: 21px;
-    background-color: var(--color-red);
+    background-color: rgb(31, 251, 71);
     color: var(--color-black);
     font-weight: bold;
     border-radius: 50px;
@@ -664,4 +664,22 @@ textarea {
     font-size: 16px;
     color: var(--color-primary-out);
 }
-/*12:45*/
+
+.card-status-pedido.active {
+ background-color: var(--color-secundary-out);
+}
+
+.card-status-pedido.pendding {
+    opacity: 0.3;
+}
+
+.card-status-pedido.pendding .img-icon-details{
+    width: 30px;
+    height: 30px;
+    font-size: 14px;
+    border-radius: 8px;
+}
+.card-status-pedido.cancelado .img-icon-details {
+    background-color: var(--color-red);
+    color: var(--color-input-out);
+}
