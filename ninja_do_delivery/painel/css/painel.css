@@ -44,7 +44,7 @@
 /*menu left*/
 
 .menu-left {
-    width: 250px;
+    width: 230px;
     background-color: var(--color-secundary-out);
     position: fixed;
     left: 0;
@@ -75,7 +75,7 @@
 }
 
 .menu-item i {
-    width:10px;
+    width:5px;
     text-align: center;
     margin-right: 8px;
 }
@@ -115,7 +115,33 @@
 
 h1.title-page {
     color: var(--color-black);
-    font-size: 20px;
+    font-size: 18px;
     flex:1;
     
+}
+
+.container-right {
+    display: flex;
+    align-items: center;
+}
+.conteudo {
+    padding-left: 230px;
+}
+
+.container-dados p {
+    margin-bottom: 0;
+    font-size: 16px;
+    text-align: right;
+    color: var(--color-black);
+    line-height: 15px;
+}
+
+.container-dados span {
+    font-size: 13px;
+    text-align: right;
+    color: var(--color-text-out);
+}
+
+.container-dados {
+    margin-right: 20px;
 }
