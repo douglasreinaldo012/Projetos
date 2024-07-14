@@ -145,3 +145,26 @@ h1.title-page {
 .container-dados {
     margin-right: 20px;
 }
+.conteudo-inner {
+    margin-top: 20px;
+}
+/*tela pedidos */
+.menus-pedido i{
+    margin-right: 2px;
+}
+.menus-pedido a{
+    margin-right: 10px;
+    opacity: 0.5;
+}
+.menus-pedido a.active, .menus-pedido a:hover {
+    opacity: 1;
+}
+.badge-total-pedidos {
+    display: inline-block;
+    background-color: var(--color-primary-out);
+    border-radius: 50px;
+    font-size: 12px;
+    width: 30px;
+    text-align: center;
+    margin-left: 5px;
+}
