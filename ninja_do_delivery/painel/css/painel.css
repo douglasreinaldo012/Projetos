@@ -244,16 +244,15 @@ h1.title-page {
 }
 
 .card-pedido:hover {
-    background-color: var(--color-secundary-out);
+    background-color: var(--color-cor-papel);
 
 }
 
 .card-pedido:hover::before {
-    background-image: radial-gradient(circle,transparent,transparent 50%,var(--color-secundary-out) 50%,var(--color-secundary-out) 100%);
+    background-image: radial-gradient(circle,transparent,transparent 50%,var(--color-cor-papel) 50%,var(--color-cor-papel) 100%);
 }
-
 .card-pedido:hover::after {
-    background-image: radial-gradient(circle,transparent,transparent 50%,var(--color-secundary-out) 50%,var(--color-secundary-out) 100%);
+    background-image: radial-gradient(circle,transparent,transparent 50%,var(--color-cor-papel) 50%,var(--color-cor-papel) 100%);
 }
 
 .card-content {
