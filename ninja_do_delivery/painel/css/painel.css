@@ -408,3 +408,7 @@ h1.title-page {
     transition: all 0.3s;
     box-shadow: var(--box-shadow);
 }
+.icon-action:hover {
+    background-color: var(--color-secundary-out);
+}
+/*10-16*/
