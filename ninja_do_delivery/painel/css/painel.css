@@ -411,4 +411,45 @@ h1.title-page {
 .icon-action:hover {
     background-color: var(--color-secundary-out);
 }
-/*10-16*/
+
+.title-produtos {
+    font-size: 14px;
+    color: var(--color-black);
+}
+
+.drag-icon-produto {
+    display: flex;
+    width: 35px;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    cursor: grab;
+}
+
+.lista-produtos .container-img-produto {
+    display: flex;
+    justify-content: end;
+    align-items: end;
+}
+
+.lista-produtos .infos-produto {
+    flex: 1;
+}
+
+.badge-adicionais {
+    position: absolute;
+    top: 6px;
+    margin-left: 19px;
+    font-size: 12px;
+    background-color: var(--color-primary-out);
+    color: var(--color-white);
+    width: 20px;
+    height: 20px;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+/*20:00*/
