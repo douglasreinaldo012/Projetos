@@ -74,7 +74,7 @@
                     <div class="row">
 
                         <div class="col-12">
-                            <div class="menu-config">
+                            <div class="menus-config">
                                 <a href="#" class="btn btn-white btn-sm active">
                                     <i class="fas fa-shopping-bag"></i> Delivery e Retirada
                                 </a>
@@ -105,21 +105,38 @@
                                             <span class="text mb-0">Desligado</span>
                                         </label>
                                     </div>
-                                    <div class="tempo">
-                                        <div class="forma-group">
+                                    <div class="tempo disabled">
+                                        <div class="form-group">
                                             <label><b>Tempo mínimo de retirada(min)</b></label>
-                                            <input type="number" class="form-control" placeholder="20"/>
+                                            <input type="number" class="form-control" placeholder="20" disabled/>
                                         </div>
-                                        <div class="forma-group">
+                                        <div class="form-group">
                                             <label><b>Tempo máximo de retirada(min)</b></label>
-                                            <input type="number" class="form-control" placeholder="20"/>
+                                            <input type="number" class="form-control" placeholder="20" disabled/>
                                         </div>
                                     </div>
-                                    <a class="btn btn-blue btn-sm ms-4">
+                                    <a class="btn btn-blue btn-sm ms-4 disabled">
                                         <i class="fas fa-check"></i>&nbsp;Salvar
                                     </a>
                                 </div>
                             </div>
+
+                            <div class="container-group mb-3">
+                                <div class="card card-address cursor-default mt-3">
+                                    <div class="img-icon-details">
+                                        <i class="fas fa-motorcycle"></i>
+                                    </div>
+                                    <div class="infos config">
+                                        <p class="name mb-1"><b>Delivery</b></p>
+                                        <label class="switch">
+                                            <input type="checkbox" checked>
+                                            <span class="slider round"></span>
+                                            <span class="text mb-0">ligado</span>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+
                         </div>
                         <div class="col-12 mt-5 hidden" id="taxa-entrega">
 
