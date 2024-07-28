@@ -554,6 +554,11 @@ input:checked + .slider::before {
 .form-control {
     height: 20px;
 }
+.btn-menor {
+    font-size: 12px!important;
+    margin-top: 5px!important;
+    margin-left: 3px!important;
+}
 .card-address a {
     font-size: 14px;
     margin-top: 20px;

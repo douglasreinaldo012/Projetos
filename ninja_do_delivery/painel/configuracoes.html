@@ -78,10 +78,10 @@
                                 <a href="#" class="btn btn-white btn-sm">
                                     <i class="fas fa-shopping-bag"></i> Delivery e Retirada
                                 </a>
-                                <a href="#" class="btn btn-white btn-sm active">
+                                <a href="#" class="btn btn-white btn-sm">
                                     <i class="fas fa-motorcycle"></i> Taxa de entrega
                                 </a>
-                                <a href="#" class="btn btn-white btn-sm">
+                                <a href="#" class="btn btn-white btn-sm active">
                                     <i class="fas fa-coins"></i> Formas de pagamento
                                 </a>
                             </div>
@@ -138,7 +138,8 @@
                             </div>
 
                         </div>
-                        <div class="col-12 mt-5" id="taxa-entrega">
+
+                        <div class="col-12 mt-5 " id="taxa-entrega">
                             <p class="title-categoria mb-0">
                                 <b>Selecione as opções de taxas de entrega</b>
                             </p>
@@ -190,7 +191,7 @@
                                 </div>
                             </div>
 
-                            <div class="container-group hidden mb-3" id="container-taxa-unica">
+                            <div class="container-group mb-3 hidden" id="container-taxa-unica">
                                 <div class="card card-address cursor-default mt-4 pb-4 justify-content-start">
                                     <div class="tempo">
                                         <div class="form-group form-sm">
@@ -206,13 +207,13 @@
                                             <input type="text" class="form-control" placeholder="60"/>
                                         </div>
                                     </div>
-                                    <a class="btn btn-blue btn-sm ms-4">
+                                    <a class="btn btn-blue btn-sm ms-4 btn-menor">
                                         <i class="fas fa-check"></i>&nbsp;Salvar Alterações
                                     </a>
                                 </div>
                             </div>
 
-                            <div class="container-group mb-3" id="container-taxa-distancia">
+                            <div class="container-group mb-3 hidden" id="container-taxa-distancia">
                                 <div class="card card-address cursor-default mt-4 pt-4 ps-4 justify-content-start">
                                     <div class="tempo">
                                         <div class="form-group form-sm">
@@ -232,80 +233,92 @@
                                             <input type="text" class="form-control" placeholder="60"/>
                                         </div>
                                     </div>
-                                    <a class="btn btn-blue btn-sm ms-4">
+                                    <a class="btn btn-blue btn-sm ms-4 btn-menor">
                                         <i class="fas fa-plus"></i>&nbsp;Adicionar
                                     </a>
                                 </div>
-                            </div>
-                            <p class="title-categoria mb-0">
-                                <b>Lista das taxas cadastradas:</b>
-                            </p>
-
-                            <div class="card mt-3">
-                                <table class="table table-hover">
-                                    <thead>
-                                        <tr>
-                                            <th><b>Distância (km)</b></th>
-                                            <th><b>Taxa (R$)</b></th>
-                                            <th><b>Tempo de entrega (min)</b></th>
-                                            <th><b>Status</b></th>
-                                            <th><b>Ações</b></th>
-                                        </tr>
-                                        
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td>Até 5 km</td>
-                                            <td>R$ 5,00</td>
-                                            <td>60 a 90 min</td>
-                                            <td>
-                                                <span class="badge badge-success">Ativado</span>
-                                            </td>
-                                            <td>
-                                                <div class="dropdown">
-                                                    <button class="btn btn-white btn-sm" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                                        <i class="fas fa-ellipsis-v"></i>
-                                                    </button>
-                                                    <div class="dropdown-menu">
-                                                        <a class="dropdown-item" href="#">
-                                                            <i class="fas fa-check"></i>&nbsp;<b>Ativar</b>
-                                                        </a>
-                                                        <a class="dropdown-item color-red" href="#">
-                                                            <i class="fas fa-trash-alt"></i>&nbsp;<b>Remover</b>
-                                                        </a>
+                                <p class="title-categoria mb-0">
+                                    <b>Lista das taxas cadastradas:</b>
+                                </p>
+                                <div class="card mt-3">
+                                    <table class="table table-hover">
+                                        <thead>
+                                            <tr>
+                                                <th><b>Distância (km)</b></th>
+                                                <th><b>Taxa (R$)</b></th>
+                                                <th><b>Tempo de entrega (min)</b></th>
+                                                <th><b>Status</b></th>
+                                                <th><b>Ações</b></th>
+                                            </tr>
+                                            
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>Até 5 km</td>
+                                                <td>R$ 5,00</td>
+                                                <td>60 a 90 min</td>
+                                                <td>
+                                                    <span class="badge badge-success">Ativado</span>
+                                                </td>
+                                                <td>
+                                                    <div class="dropdown">
+                                                        <button class="btn btn-white btn-sm" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                                            <i class="fas fa-ellipsis-v"></i>
+                                                        </button>
+                                                        <div class="dropdown-menu">
+                                                            <a class="dropdown-item" href="#">
+                                                                <i class="fas fa-check"></i>&nbsp;<b>Ativar</b>
+                                                            </a>
+                                                            <a class="dropdown-item color-red" href="#">
+                                                                <i class="fas fa-trash-alt"></i>&nbsp;<b>Remover</b>
+                                                            </a>
+                                                        </div>
                                                     </div>
-                                                </div>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>Até 5 a 10 km</td>
-                                            <td>R$ 7,00</td>
-                                            <td>60 a 120 min</td>
-                                            <td>
-                                                <span class="badge badge-danger">Desativado</span>
-                                            </td>
-                                            <td>
-                                                <div class="dropdown">
-                                                    <button class="btn btn-white btn-sm" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                                        <i class="fas fa-ellipsis-v"></i>
-                                                    </button>
-                                                    <div class="dropdown-menu">
-                                                        <a class="dropdown-item" href="#">
-                                                            <i class="fas fa-check"></i>&nbsp;<b>Ativar</b>
-                                                        </a>
-                                                        <a class="dropdown-item color-red" href="#">
-                                                            <i class="fas fa-trash-alt"></i>&nbsp;<b>Remover</b>
-                                                        </a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>Até 5 a 10 km</td>
+                                                <td>R$ 7,00</td>
+                                                <td>60 a 120 min</td>
+                                                <td>
+                                                    <span class="badge badge-danger">Desativado</span>
+                                                </td>
+                                                <td>
+                                                    <div class="dropdown">
+                                                        <button class="btn btn-white btn-sm" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                                            <i class="fas fa-ellipsis-v"></i>
+                                                        </button>
+                                                        <div class="dropdown-menu">
+                                                            <a class="dropdown-item" href="#">
+                                                                <i class="fas fa-check"></i>&nbsp;<b>Ativar</b>
+                                                            </a>
+                                                            <a class="dropdown-item color-red" href="#">
+                                                                <i class="fas fa-trash-alt"></i>&nbsp;<b>Remover</b>
+                                                            </a>
+                                                        </div>
                                                     </div>
-                                                </div>
-                                            </td>
-                                        </tr>
-                                    </tbody>
-                                </table>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
                             </div>
                         </div>
-                        <div class="col-12 mt-5 hidden" id="forma-pagamento">
 
+                        <div class="col-12 mt-5" id="forma-pagamento">
+                            <p class="title-categoria mb-0">
+                                <b>Selecione as formas de <b class="color-primary">pagamento na entrega.</b></b>
+                            </p>
+                            <div class="container-group mb-3">
+                                <div class="card card-address cursor-default mt-3">
+                                    <div class="img-icon-details">
+                                        <i class="fas fa-dollar-sign"></i>
+                                    </div>
+                                    <div class="infos">
+                                        <p class="name mb-1"><b>Pix</b></p>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
 
                     </div>
