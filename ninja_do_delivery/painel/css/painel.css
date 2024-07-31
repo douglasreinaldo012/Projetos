@@ -551,9 +551,7 @@ input:checked + .slider::before {
     background-color: #d4d0d0!important;
 }
 
-.form-control {
-    height: 20px;
-}
+
 .btn-menor {
     font-size: 12px!important;
     margin-top: 5px!important;
@@ -614,3 +612,70 @@ table td {
 .color-red{
     color: var(--color-red)!important;
 } 
+
+.opacity-05 {
+    opacity: 0.5;
+}
+
+/*empresa*/
+
+.logo-empresa .container-img-sobre {
+    position: relative;
+    margin-top: 0;
+    width: 110px;
+    height: 110px;
+    right: 0;
+    margin-right: 20px;
+}
+
+.logo-empresa .icon-action {
+    position: absolute;
+    right: -10px;
+    bottom: -10px;
+}
+
+.detalhes-empresa {
+    flex: 1;
+    
+}
+
+.select-mod {
+    background-color: var(--color-white);
+    color: var(--color-black)!important;
+    border-radius: 15px;
+    font-size: 16px;
+    width: 70px;
+    padding: 5px;
+    box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1)!important;
+    border: none!important;
+    height: 30px;
+
+    
+}
+
+.container-cep .form-control {
+    padding-right: 55px;
+}
+
+.container-cep .btn {
+    float: right;
+    margin-top: -35px;
+    margin-right: 10px;
+    padding: 0px;
+    width: 30px;
+    height: 30px;
+    
+    
+}
+
+.container-cep i {
+    font-size: 14px;
+    
+}
+
+
+
+
+
+
+
