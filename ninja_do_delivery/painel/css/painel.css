@@ -554,7 +554,7 @@ input:checked + .slider::before {
 
 .btn-menor {
     font-size: 12px!important;
-    margin-top: 5px!important;
+    margin-top: 15px!important;
     margin-left: 3px!important;
 }
 .card-address a {
@@ -643,12 +643,13 @@ table td {
     background-color: var(--color-white);
     color: var(--color-black)!important;
     border-radius: 15px;
-    font-size: 16px;
-    width: 70px;
+    font-size: 12px;
+    width: 90px;
     padding: 5px;
     box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1)!important;
     border: none!important;
-    height: 30px;
+    height: 40px;
+    text-align: center;
 
     
 }
@@ -672,6 +673,12 @@ table td {
     font-size: 14px;
     
 }
+
+.horario .btn-red {
+    margin-top: 25px;
+}
+
+
 
 
 
