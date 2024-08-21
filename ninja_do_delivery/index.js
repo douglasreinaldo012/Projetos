@@ -1,10 +1,11 @@
-const { server, restify, config  } = require('./server/server');
+const { server, restify, config } = require('./server/server');
 
-server.get('/*',restify.plugins.serveStatic({
+server.get('/*', restify.plugins.serveStatic({
     directory: './client',
-    default: 'index.html'
+    default: 'carrinho.html'
 }));
 
 server.listen(config.port, () => {
     console.log(`AMBIENTE: ${config.ambiente} URL: ${config.url} PORTA: ${config.port}`);
 });
+
