@@ -2,7 +2,7 @@ const { server, restify, config } = require('./server/server');
 
 server.get('/*', restify.plugins.serveStatic({
     directory: './client',
-    default: 'carrinho.html'
+    default: 'index.html'
 }));
 
 server.listen(config.port, () => {
